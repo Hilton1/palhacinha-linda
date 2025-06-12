@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+body {
+  background-color: #FFF;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  gap: 12px;
+}
+
+.container h1 {
+  color: #000;
+  display: block;
+  text-align: center;
+}
+
+.container .buttons {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.container button {
+  padding:16px 32px;
+
+  background-color: red;
+  border: none;
+  cursor: pointer;
+
+  color: #FFF;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.container #sim:hover {
+  background: blue;
+}
