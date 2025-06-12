@@ -1,13 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;600&display=swap');
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
-  background-color: #FFF;
+  background: linear-gradient(135deg, #ffe6e6, #ffc3d1);
+  height: 100vh;
 }
 
 .container {
@@ -19,10 +18,22 @@ body {
   gap: 12px;
 }
 
+.content {
+  background-color: white;
+  padding: 3rem;
+  border-radius: 20px;
+  background: transparent;
+  text-align: center;
+}
+
 .container h1 {
   color: #000;
   display: block;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 24px;
 }
 
 .container .buttons {
@@ -31,17 +42,58 @@ body {
 }
 
 .container button {
-  padding:16px 32px;
-
-  background-color: red;
+  padding: 14px 28px;
+  border-radius: 30px;
+  background-color: #D81B60;
   border: none;
   cursor: pointer;
-
-  color: #FFF;
+  color: white;
   font-size: 16px;
-  transition: 0.3s;
+  transition: background 0.3s, transform 0.2s;
 }
 
-.container #sim:hover {
-  background: blue;
+.container button:hover {
+  background-color: #ad1457;
+  transform: scale(1.05);
+}
+
+
+.surpresa-container {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #FFE6E6;
+  padding: 1.5rem;
+  border-radius: 12px;
+  color: #880E4F;
+  text-align: center;
+}
+
+.surpresa-container h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  color: #EC407A;
+  margin-bottom: 1rem;
+}
+
+.surpresa-container p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.surpresa-container {
+  position: relative;
+}
+
+.surpresa-container img {
+  position: relative;
+  border-radius: 12px;
+  border: 3px dashed #FF80AB;
+  padding: 6px;
+  background: white;
+  box-shadow: 0 0 15px rgba(255, 105, 135, 0.25);
+}
+
+.surpresa-container footer {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #B71C1C;
 }
