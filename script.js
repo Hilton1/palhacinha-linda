@@ -1,17 +1,13 @@
 const botaoNao = document.querySelector("#nao");
 const botaoSim = document.querySelector("#sim");
 
-let isAnimating = false;
 
 function posicaoAleatoria() {
-  if (!isAnimating) {
     isAnimating = true;
     const randomX = Math.floor(Math.random() * 300) - 150;
     const randomY = Math.floor(Math.random() * 300) - 150;
     botaoNao.style.transform = `translate(${randomX}px, ${randomY}px)`;
     botaoNao.style.transition = "all 0.2s ease";
-    setTimeout(() => isAnimating = false, 200);
-  }
 }
 
 
